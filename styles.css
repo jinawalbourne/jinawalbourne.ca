@@ -439,3 +439,9 @@ h2 {
     color: rgb(80, 81, 88);
     text-align: center;
 }
+
+.icon-img {
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
