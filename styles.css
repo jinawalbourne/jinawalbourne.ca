@@ -445,3 +445,31 @@ h2 {
   vertical-align: middle;
   margin-right: 8px;
 }
+
+.heart-img {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 200px; /* adjust size */
+  opacity: 0.2; /* semi-transparent */
+  animation: riseHeart 2.5s ease-out forwards;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes riseHeart {
+  from {
+    top: 100%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 0.1;
+  }
+}
+
+#home .container {
+  position: relative;
+  z-index: 1; /* keeps text above the heart */
+}
