@@ -144,7 +144,7 @@ h2 {
     50% { border-color: var(--primary-color) }
 }
 
-.btn {
+.resume-button {
     display: inline-block;
     padding: 12px 30px;
     background-color: var(--secondary-color);
@@ -154,7 +154,7 @@ h2 {
     transition: var(--transition);
 }
 
-.btn:hover {
+.resume-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
@@ -451,7 +451,7 @@ h2 {
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 650px;
   opacity: 0;
   z-index: 0;
   animation: riseHeart 2.5s ease-out forwards;
@@ -472,4 +472,35 @@ h2 {
 #home .container {
   position: relative;
   z-index: 1;
+}
+
+/* Dark mode fixes */
+.dark-mode .heart-img {
+  opacity: 0.6;
+  filter: grayscale(100%) brightness(0.4);
+}
+
+.dark-mode .project-tags span {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.dark-mode .project-btn {
+  background: #ffffff;
+  color: #000;
+}
+
+.dark-mode .project-btn:hover {
+  background: #e5e7eb;
+}
+
+.dark-mode .resume-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.dark-mode .resume-button:hover {
+  background-color: #f3f4f6;
 }
