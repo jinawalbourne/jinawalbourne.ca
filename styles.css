@@ -479,11 +479,11 @@ h2 {
 
 @keyframes riseHeart {
     from {
-            top: 100%;
+        top: 100%;
         opacity: 0;
     }
     to {
-        top: 20%;
+        top: 30%;
         opacity: 10;
     }
 }
@@ -494,7 +494,7 @@ h2 {
         opacity: 0;
     }
     to {
-        top: 50%;
+        top: 70%;
         opacity: 1;
     }
 }
