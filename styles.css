@@ -356,7 +356,8 @@ h2 {
     }
 
     .heart-img {
-        top: 25% !important;
+        top: 50% !important;
+        transform: translate(-50%, -20%)
     }
 
     .typing {
