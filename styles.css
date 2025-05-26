@@ -358,8 +358,13 @@ h2 {
         animation: riseHeartMobile 2.5s ease-out forwards;
         width: 90vw;
         max-width: 650px;
-        top: 100%;
-        transform: translateX(-50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        z-index: 0;
     }
 
     .typing {
@@ -494,12 +499,12 @@ h2 {
     from {
         top: 100%;
         opacity: 0;
-        transform: translateX(-50%) translateY(0%);
+        transform: translate(-50%, 0%);
     }
     to {
         top: 10%;
         opacity: 1;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translate(-50%, -50%);
     }
 }
 
