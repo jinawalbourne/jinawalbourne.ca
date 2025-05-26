@@ -133,8 +133,7 @@ h2 {
     border-right: 2px solid var(--primary-color);
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2.5s steps(40, end),
-               blink-caret .75s step-end infinite;
+    animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -356,8 +355,11 @@ h2 {
     }
 
     .heart-img {
-        top: 50% !important;
-        transform: translate(-50%, -20%)
+        animation: riseHeartMobile 2.5s ease-out forwards;
+        width: 90vw;
+        max-width: 650px;
+        top: 100%;
+        transform: translateX(-50%);
     }
 
     .typing {
@@ -457,67 +459,78 @@ h2 {
 }
 
 .icon-img {
-  height: 16px;
-  vertical-align: middle;
-  margin-right: 8px;
+    height: 16px;
+     vertical-align: middle;
+    margin-right: 8px;
 }
 
 .heart-img {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  width: 90vw;
-  max-width: 650px;
-  opacity: 0;
-  z-index: 0;
-  animation: riseHeart 2.5s ease-out forwards;
-  pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 650px;
+    opacity: 0;
+    z-index: 0;
+    animation: riseHeart 2.5s ease-out forwards;
+    pointer-events: none;
 }
 
 @keyframes riseHeart {
-  from {
-    top: 100%;
-    opacity: 0;
-  }
-  to {
-    top: 20%;
-    opacity: 10;
-  }
+    from {
+            top: 100%;
+        opacity: 0;
+    }
+    to {
+        top: 20%;
+        opacity: 10;
+    }
+}
+
+@keyframes riseHeartMobile {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
 }
 
 #home .container {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 /* Dark mode fixes */
 .dark-mode .heart-img {
-  opacity: 0.6;
-  filter: grayscale(100%) brightness(0.4);
+    opacity: 0.6;
+    filter: grayscale(100%) brightness(0.4);
 }
 
 .dark-mode .project-tags span {
-  background: #fff;
-  color: #000;
-  border: 1px solid #ddd;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
 }
 
 .dark-mode .project-btn {
-  background: #ffffff;
-  color: #000;
+    background: #ffffff;
+    color: #000;
 }
 
 .dark-mode .project-btn:hover {
-  background: #e5e7eb;
+    background: #e5e7eb;
 }
 
 .dark-mode .resume-button {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
 }
 
 .dark-mode .resume-button:hover {
-  background-color: #f3f4f6;
+    background-color: #f3f4f6;
 }
