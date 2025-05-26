@@ -35,6 +35,8 @@ body {
     line-height: 1.6;
     transition: var(--transition);
     overflow-x: hidden;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* Header and Navigation */
@@ -344,7 +346,9 @@ h2 {
     }
     
     nav ul {
-        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
     
     nav ul li {
@@ -353,6 +357,12 @@ h2 {
 
     .heart-img {
         top: 25% !important;
+    }
+
+    .typing {
+        white-space: normal;
+        border: none;
+        animation: none;
     }
 }
 
