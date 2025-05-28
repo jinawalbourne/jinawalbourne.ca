@@ -355,7 +355,7 @@ h2 {
     }
 
     .heart-img {
-        animation: riseHeartMobile 2.5s ease-out forwards;
+        animation: riseHeart 2.5s ease-out forwards;
         width: 90vw;
         max-width: 650px;
         top: 50%;
@@ -465,7 +465,7 @@ h2 {
 
 .icon-img {
     height: 16px;
-     vertical-align: middle;
+    vertical-align: middle;
     margin-right: 8px;
 }
 
@@ -489,22 +489,9 @@ h2 {
         transform: translateX(-50%) translateY(0%);
     }
     to {
-        top: 50%;
+        top: 60%;
         opacity: 1;
         transform: translateX(-50%) translateY(-50%);
-    }
-}
-
-@keyframes riseHeartMobile {
-    from {
-        top: 100%;
-        opacity: 0;
-        transform: translate(-50%, 0%);
-    }
-    to {
-        top: 10%;
-        opacity: 1;
-        transform: translate(-50%, -50%);
     }
 }
 
