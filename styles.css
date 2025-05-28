@@ -6,7 +6,7 @@
     --card-bg: #e0e0e0;
     --header-bg: #ffffff;
     --transition: all 0.3s ease;
-    --accent-color: #4a6cfa;
+    --accent-color: #932292;
 }
 
 .dark-mode {
@@ -269,8 +269,13 @@ h2 {
     gap: 7px;
 }
 
-.project-btn i {
-    font-size: 1.1em;
+.project-btn .icon-img {
+    height: 18px;
+}
+
+#theme-toggle .icon-img {
+    height: 24px;
+    width: 24px;
 }
 
 .project-btn:hover {
@@ -297,11 +302,6 @@ h2 {
     transition: var(--transition);
 }
 
-.social-icon i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
 .social-icon:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -322,11 +322,6 @@ h2 {
     cursor: pointer;
     transition: var(--transition);
     z-index: 99;
-}
-
-#theme-toggle i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
 }
 
 /* Responsive Design */
@@ -454,6 +449,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 18px;
 }
 
 .connect-text {
@@ -464,8 +460,13 @@ h2 {
 }
 
 .icon-img {
-    height: 16px;
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
     vertical-align: middle;
+}
+
+.icon-email {
     margin-right: 8px;
 }
 
@@ -519,6 +520,10 @@ h2 {
 
 .dark-mode .project-btn:hover {
     background: #e5e7eb;
+}
+
+.dark-mode .connect-text {
+    color: #ffffff;
 }
 
 .dark-mode .resume-button {

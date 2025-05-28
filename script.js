@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav a');
     
     navLinks.forEach(link => {
@@ -20,27 +19,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Dark mode toggle
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = themeToggle.querySelector('i');
+    const themeIcon = themeToggle.querySelector('img');
     
     // Check if user has previously set a theme preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
+        themeIcon.src = 'images/darkmode-icon.png';
+        themeIcon.alt = 'DarkMode icon';
     }
     
+    // Toggle between icons
     themeToggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.toggle('dark-mode');
         
-        // Toggle icon between sun and moon
-        if (document.body.classList.contains('dark-mode')) {
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
+        if (isDarkMode) {
+            themeIcon.src = 'images/darkmode-icon.png';
+            themeIcon.alt = 'DarkMode icon';
             localStorage.setItem('theme', 'dark');
         } else {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
+            themeIcon.src = 'images/lightmode-icon.png';
+            themeIcon.alt = 'LightMode icon';
             localStorage.setItem('theme', 'light');
         }
     });
@@ -74,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 subtitle.classList.remove('typing');
-                void subtitle.offsetWidth; // Trigger reflow
+                void subtitle.offsetWidth;
                 subtitle.classList.add('typing');
             }
         });
