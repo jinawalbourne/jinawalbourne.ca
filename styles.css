@@ -1,21 +1,22 @@
 :root {
-    --primary-color: #000000;
-    --secondary-color: #333333;
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --card-bg: #e0e0e0;
-    --header-bg: #ffffff;
+    --primary-color: #5C4033; /* deep brown */
+    --secondary-color: #A0522D; /* sienna */
+    --background-color: #FFF8F0; /* warm cream */
+    --text-color: #3E2723; /* dark brown */
+    --card-bg: #EAD7C2; /* light tan */
+    --header-bg: #D2B48C; /* tan */
     --transition: all 0.3s ease;
-    --accent-color: #932292;
+    --accent-color: #D2691E; /* chocolate */
 }
 
 .dark-mode {
-    --primary-color: #ffffff;
-    --secondary-color: #e0e0e0;
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --card-bg: #333333;
-    --header-bg: #1a1a1a;
+    --primary-color: #FFF8F0;
+    --secondary-color: #EAD7C2;
+    --background-color: #3E2723;
+    --text-color: #FFF8F0;
+    --card-bg: #5C4033;
+    --header-bg: #4E342E;
+    --accent-color: #FFB74D;
 }
 
 * {
@@ -535,3 +536,51 @@ h2 {
 .dark-mode .resume-button:hover {
     background-color: #f3f4f6;
 }
+
+/* Avatar and Home Section Layout */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.avatar-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(92, 64, 51, 0.15);
+    background: var(--card-bg);
+    border: 4px solid var(--header-bg);
+    margin-bottom: 20px;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 250px;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .home-text {
+        align-items: center;
+        min-width: unset;
+    }
+    .avatar-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Remove heart-img styles
+.heart-img {
+    display: none !important;
+} */
