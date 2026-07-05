@@ -15,8 +15,9 @@
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
@@ -37,86 +38,57 @@
     <section id="about" class="section about-section">
         <div class="container">
             <h2>About me</h2>
-            <div class="about-layout">
-                <article class="about-block about-intro">
+            <div class="about-content">
+                <div class="about-copy">
                     <h3>Who I am</h3>
                     <p>
-                        I am a Computer Science student at Dalhousie University who enjoys building things that make life easier, smarter, and more fun. I am currently sharpening my skills through coursework and personal projects while exploring the areas of software development, web development, cybersecurity, and AI.
+                        I am a Computer Science student at Dalhousie University who enjoys building practical software that makes complex systems easier to use. I work well in collaborative teams where ideas can be shared openly, and I am especially drawn to projects where technology supports real-world systems, including food systems and sustainability.
                     </p>
-                </article>
+                </div>
 
-                <article class="about-block">
-                    <h3>Technical focus</h3>
-                    <p>
-                        I work with Java, Python, C, MySQL, HTML, CSS, and JavaScript, and I like turning ideas into practical tools that solve real problems.
-                    </p>
-                </article>
-
-                <article class="about-block">
-                    <h3>How I work</h3>
-                    <ul class="about-list">
-                        <li>I enjoy collaborating with teams where ideas can be shared openly.</li>
-                        <li>I like breaking big problems into clear, manageable steps.</li>
-                        <li>I care about learning, improving, and building with purpose.</li>
-                    </ul>
-                </article>
-
-                <article class="about-block soft-skills-block">
-                    <h3>Soft skills</h3>
-                    <div class="soft-skills">
-                        <span>Teamwork</span>
-                        <span>Communication</span>
-                        <span>Problem solving</span>
-                        <span>Adaptability</span>
-                        <span>Curiosity</span>
-                        <span>Persistence</span>
-                    </div>
-                </article>
+                <div class="soft-skills" aria-label="Soft skills">
+                    <span>Teamwork</span>
+                    <span>Communication</span>
+                    <span>Problem solving</span>
+                    <span>Adaptability</span>
+                    <span>Curiosity</span>
+                    <span>Persistence</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="experience" class="section experience-section">
         <div class="container">
-            <h2>Programming Languages</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Java</div>
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">x86 Assembly</div>
-                <div class="skill-card">MySQL</div>
-                <div class="skill-card">TypeScript</div>
-            </div>
-            
-            <h2>Development Tools</h2>
-            <div class="tools-grid">
-                <div class="tool-category">
-                    <h3>IDEs</h3>
-                    <div class="tool-card">Visual Studio Code</div>
-                    <div class="tool-card">IntelliJ IDEA</div>
-                    <div class="tool-card">Eclipse</div>
-                </div>
-                
-                <div class="tool-category">
-                    <h3>Version Control</h3>
-                    <div class="tool-card">Git</div>
-                    <div class="tool-card">GitHub</div>
-                    <div class="tool-card">GitLab</div>
-                </div>
-                
-                <div class="tool-category">
-                    <h3>Testing Tools</h3>
-                    <div class="tool-card">JUnit</div>
-                    <div class="tool-card">UI Testing</div>
-                    <div class="tool-card">Playwright</div>
-                </div>
-                
-                <div class="tool-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="tool-card">React</div>
-                </div>
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <p class="experience-role">Software Developer Co-op</p>
+                        <p class="experience-company">Irving Oil</p>
+                        <p class="experience-date">May 2026 - August 2026</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Migrating Salesforce sites from Aura to Lightning Web Runtime to support cleaner custom URL paths, stronger performance, improved scalability, and better SEO.</li>
+                        <li>Creating test coverage for custom Lightning Web Components that previously had little or no automated testing.</li>
+                        <li>Modernizing Salesforce site architecture while improving long-term maintainability for future development work.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="experience-meta">
+                        <p class="experience-role">Software Developer Co-op</p>
+                        <p class="experience-company">Irving Oil</p>
+                        <p class="experience-date">September 2025 - December 2025</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed Apex and Salesforce Flow automation to validate dealer rewards against a loyalty dataset of 2M+ records, reducing manual employee validation to zero.</li>
+                        <li>Rebuilt legacy Genesys routing logic in Salesforce with Amazon Connect, recreating routing workflows end-to-end on a single Salesforce-based platform.</li>
+                        <li>Designed a callback analysis flow to measure customer callback completion time and help teams identify bottlenecks affecting SLA performance.</li>
+                        <li>Created Amazon Connect telephony flows integrated with AWS Lambda to improve call-forwarding logic and streamline automated routing.</li>
+                        <li>Built and deployed an Einstein Bot for customer feedback, using Apex to automate case creation and designing the conversational submission flow in Salesforce.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -184,6 +156,51 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Programming Languages</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Java</div>
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">x86 Assembly</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">TypeScript</div>
+            </div>
+
+            <h2>Development Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-category">
+                    <h3>IDEs</h3>
+                    <div class="tool-card">Visual Studio Code</div>
+                    <div class="tool-card">IntelliJ IDEA</div>
+                    <div class="tool-card">Eclipse</div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Version Control</h3>
+                    <div class="tool-card">Git</div>
+                    <div class="tool-card">GitHub</div>
+                    <div class="tool-card">GitLab</div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Testing Tools</h3>
+                    <div class="tool-card">JUnit</div>
+                    <div class="tool-card">UI Testing</div>
+                    <div class="tool-card">Playwright</div>
+                </div>
+
+                <div class="tool-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="tool-card">React</div>
                 </div>
             </div>
         </div>
