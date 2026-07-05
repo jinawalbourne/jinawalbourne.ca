@@ -34,13 +34,44 @@
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
         <div class="container">
             <h2>About me</h2>
-            <div class="about-content">
-                <p class="about-paragraph">
-                    Hey everyone, welcome to my personal portfolio! I am a Computer Science student at Dalhousie University with a passion for building things that make life easier, smarter, and more fun. I'm currently sharpening my skills in Java, Python, C, MySQL, HTML, CSS, and JavaScript through both coursework and personal projects. What excites me most is the process of solving real problems... especially when I get to do it alongside others. I love being part of a team where ideas bounce around, strengths complement each other, and we push through challenges together. I'm particularly excited about solving problems and bringing ideas to life through code, especially in software and web development, cybersecurity, and AI.
-                </p>
+            <div class="about-layout">
+                <article class="about-block about-intro">
+                    <h3>Who I am</h3>
+                    <p>
+                        I am a Computer Science student at Dalhousie University who enjoys building things that make life easier, smarter, and more fun. I am currently sharpening my skills through coursework and personal projects while exploring the areas of software development, web development, cybersecurity, and AI.
+                    </p>
+                </article>
+
+                <article class="about-block">
+                    <h3>Technical focus</h3>
+                    <p>
+                        I work with Java, Python, C, MySQL, HTML, CSS, and JavaScript, and I like turning ideas into practical tools that solve real problems.
+                    </p>
+                </article>
+
+                <article class="about-block">
+                    <h3>How I work</h3>
+                    <ul class="about-list">
+                        <li>I enjoy collaborating with teams where ideas can be shared openly.</li>
+                        <li>I like breaking big problems into clear, manageable steps.</li>
+                        <li>I care about learning, improving, and building with purpose.</li>
+                    </ul>
+                </article>
+
+                <article class="about-block soft-skills-block">
+                    <h3>Soft skills</h3>
+                    <div class="soft-skills">
+                        <span>Teamwork</span>
+                        <span>Communication</span>
+                        <span>Problem solving</span>
+                        <span>Adaptability</span>
+                        <span>Curiosity</span>
+                        <span>Persistence</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -56,7 +87,7 @@
                 <div class="skill-card">Python</div>
                 <div class="skill-card">x86 Assembly</div>
                 <div class="skill-card">MySQL</div>
-                <div class="skill-card">Typescript</div>
+                <div class="skill-card">TypeScript</div>
             </div>
             
             <h2>Development Tools</h2>
@@ -78,7 +109,7 @@
                 <div class="tool-category">
                     <h3>Testing Tools</h3>
                     <div class="tool-card">JUnit</div>
-                    <div class="tool-card">UI</div>
+                    <div class="tool-card">UI Testing</div>
                     <div class="tool-card">Playwright</div>
                 </div>
                 
@@ -110,8 +141,8 @@
                             <span>Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/ai-sales-coach" class="btn project-btn" target="_blank">
-                                <img src="images/github-icon-projects.png" alt="GitHub icon" class="icon-img"> Source
+                            <a href="https://github.com/jinawalbourne/ai-sales-coach" class="btn project-btn" target="_blank" rel="noopener noreferrer">
+                                View source
                             </a>
                         </div>
                     </div>
@@ -129,8 +160,8 @@
                             <span>Python</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/json-compiler" class="btn project-btn" target="_blank">
-                                <img src="images/github-icon-projects.png" alt="GitHub icon" class="icon-img"> Source
+                            <a href="https://github.com/jinawalbourne/json-compiler" class="btn project-btn" target="_blank" rel="noopener noreferrer">
+                                View source
                             </a>
                         </div>
                     </div>
@@ -148,8 +179,8 @@
                             <span>Java</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/course-scheduler" class="btn project-btn" target="_blank">
-                                <img src="images/github-icon-projects.png" alt="GitHub icon" class="icon-img"> Source
+                            <a href="https://github.com/jinawalbourne/course-scheduler" class="btn project-btn" target="_blank" rel="noopener noreferrer">
+                                View source
                             </a>
                         </div>
                     </div>
@@ -174,10 +205,10 @@
         </div>
     </section>
 
-    <div id="theme-toggle">
+    <button id="theme-toggle" type="button" aria-label="Toggle color theme">
         <img src="images/lightmode-icon.png" alt="LightMode icon" class="icon-img">
-    </div>
+    </button>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
