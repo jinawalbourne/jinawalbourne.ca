@@ -3,227 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jina Walbourne - Portfolio</title>
+    <meta name="description" content="Jina Walbourne is a Computer Science student and software developer building practical, maintainable software.">
+    <title>Jina Walbourne - Software Developer Portfolio</title>
     <link rel="icon" type="image/png" href="favicon/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
         <div class="header-content">
-            <div class="logo">Jina Walbourne</div>
-            <nav>
+            <a class="logo" href="#home" aria-label="Jina Walbourne home">
+                <span>Jina</span>
+                <span>Walbourne</span>
+            </a>
+            <nav aria-label="Primary navigation">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="section">
-        <div class="container home-container">
-            <img src="images/jina-avatar.png" alt="Jina Walbourne Avatar" class="avatar-img">
-            <div class="home-text">
-                <h1>Hi, I'm Jina Walbourne!</h1>
-                <p class="subtitle typing">Step into my portfolio and explore where creativity meets purpose.</p>
-                <a href="Jina Walbourne Resume.pdf" class="resume-button">Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2>About me</h2>
-            <div class="about-content">
-                <div class="about-copy">
-                    <h3>Who I am</h3>
-                    <p>
-                        I am a Computer Science student at Dalhousie University who enjoys building practical software that makes complex systems easier to use. I work well in collaborative teams where ideas can be shared openly, and I am especially drawn to projects where technology supports real-world systems, including food systems and sustainability.
+    <main id="main">
+        <section id="home" class="section hero-section" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="section-kicker">Software Developer Portfolio</p>
+                    <h1 id="hero-title">Jina Walbourne</h1>
+                    <p class="subtitle">
+                        Computer Science student building practical software for automation, customer systems, and maintainable digital experiences.
                     </p>
+                    <div class="hero-actions" aria-label="Primary actions">
+                        <a href="Jina Walbourne Resume.pdf" class="button button-primary">Resume</a>
+                        <a href="https://github.com/jinawalbourne" class="button button-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/jina-walbourne" class="button button-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
                 </div>
 
-                <div class="soft-skills" aria-label="Soft skills">
-                    <span>Teamwork</span>
-                    <span>Communication</span>
-                    <span>Problem solving</span>
-                    <span>Adaptability</span>
-                    <span>Curiosity</span>
-                    <span>Persistence</span>
+                <div class="hero-visual reveal">
+                    <div class="portrait-frame">
+                        <img src="images/jina-avatar.png" alt="Portrait of Jina Walbourne" class="avatar-img" decoding="async" fetchpriority="high">
+                    </div>
+                    <div class="hero-note" aria-label="Current focus">
+                        <span class="note-label">Focus</span>
+                        <span>Salesforce modernization, testing, and workflow automation</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-list">
-                <article class="experience-item">
-                    <div class="experience-meta">
-                        <p class="experience-role">Software Developer Co-op</p>
-                        <p class="experience-company">Irving Oil</p>
-                        <p class="experience-date">May 2026 - August 2026</p>
+                <dl class="hero-metrics reveal" aria-label="Portfolio highlights">
+                    <div>
+                        <dt>2</dt>
+                        <dd>Irving Oil co-op terms</dd>
                     </div>
-                    <ul class="experience-details">
-                        <li>Migrating Salesforce sites from Aura to Lightning Web Runtime to support cleaner custom URL paths, stronger performance, improved scalability, and better SEO.</li>
-                        <li>Creating test coverage for custom Lightning Web Components that previously had little or no automated testing.</li>
-                        <li>Modernizing Salesforce site architecture while improving long-term maintainability for future development work.</li>
-                    </ul>
-                </article>
-
-                <article class="experience-item">
-                    <div class="experience-meta">
-                        <p class="experience-role">Software Developer Co-op</p>
-                        <p class="experience-company">Irving Oil</p>
-                        <p class="experience-date">September 2025 - December 2025</p>
+                    <div>
+                        <dt>2M+</dt>
+                        <dd>Loyalty records supported</dd>
                     </div>
-                    <ul class="experience-details">
-                        <li>Developed Apex and Salesforce Flow automation to validate dealer rewards against a loyalty dataset of 2M+ records, reducing manual employee validation to zero.</li>
-                        <li>Rebuilt legacy Genesys routing logic in Salesforce with Amazon Connect, recreating routing workflows end-to-end on a single Salesforce-based platform.</li>
-                        <li>Designed a callback analysis flow to measure customer callback completion time and help teams identify bottlenecks affecting SLA performance.</li>
-                        <li>Created Amazon Connect telephony flows integrated with AWS Lambda to improve call-forwarding logic and streamline automated routing.</li>
-                        <li>Built and deployed an Einstein Bot for customer feedback, using Apex to automate case creation and designing the conversational submission flow in Salesforce.</li>
-                    </ul>
-                </article>
+                    <div>
+                        <dt>3</dt>
+                        <dd>Featured engineering projects</dd>
+                    </div>
+                    <div>
+                        <dt>0</dt>
+                        <dd>Manual reward validation steps after automation</dd>
+                    </div>
+                </dl>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Check out my latest projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-img-bg" style="background-image: url('images/AI-Coach.jpg');"></div>
-                    <div class="project-content">
-                        <h3>AI Sales Coach</h3>
-                        <p class="project-date">2025</p>
-                        <p class="project-caption">
-                            Inspired to practice sales training, I built this tool to simulate real-time objection handling using GPT-powered models.
+        <section id="about" class="section about-section" aria-labelledby="about-title">
+            <div class="container section-grid">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">About</p>
+                    <h2 id="about-title">Practical software with a real-world lens.</h2>
+                </div>
+
+                <div class="about-content reveal">
+                    <div class="about-copy">
+                        <h3>Who I am</h3>
+                        <p>
+                            I am a Computer Science student at Dalhousie University who enjoys building practical software that makes complex systems easier to use. I work well in collaborative teams where ideas can be shared openly, and I am especially drawn to projects where technology supports real-world systems, including food systems and sustainability.
                         </p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/ai-sales-coach" class="btn project-btn" target="_blank" rel="noopener noreferrer">
-                                View source
-                            </a>
-                        </div>
                     </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-img-bg" style="background-image: url('images/JSON.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Basic Front-end Compiler for JSON</h3>
-                        <p class="project-date">2024</p>
-                        <p class="project-caption">
-                            Implemented a recursive descent parser to perform lexical, syntactic, and semantic analysis on JSON structures.
-                        </p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/json-compiler" class="btn project-btn" target="_blank" rel="noopener noreferrer">
-                                View source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-img-bg" style="background-image: url('images/course-scheduler.jpg');"></div>
-                    <div class="project-content">
-                        <h3>Course Scheduler</h3>
-                        <p class="project-date">2024</p>
-                        <p class="project-caption">
-                            Developed a course scheduler that manages university courses and prerequisites, detecting cyclic dependencies using Depth First Search (DFS).
-                        </p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/jinawalbourne/course-scheduler" class="btn project-btn" target="_blank" rel="noopener noreferrer">
-                                View source
-                            </a>
-                        </div>
+
+                    <div class="soft-skills" aria-label="Soft skills">
+                        <span>Teamwork</span>
+                        <span>Communication</span>
+                        <span>Problem solving</span>
+                        <span>Adaptability</span>
+                        <span>Curiosity</span>
+                        <span>Persistence</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Programming Languages</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Java</div>
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">x86 Assembly</div>
-                <div class="skill-card">MySQL</div>
-                <div class="skill-card">TypeScript</div>
-            </div>
-
-            <h2>Development Tools</h2>
-            <div class="tools-grid">
-                <div class="tool-category">
-                    <h3>IDEs</h3>
-                    <div class="tool-card">Visual Studio Code</div>
-                    <div class="tool-card">IntelliJ IDEA</div>
-                    <div class="tool-card">Eclipse</div>
+        <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Experience</p>
+                    <h2 id="experience-title">Engineering work focused on systems that last.</h2>
                 </div>
 
-                <div class="tool-category">
-                    <h3>Version Control</h3>
-                    <div class="tool-card">Git</div>
-                    <div class="tool-card">GitHub</div>
-                    <div class="tool-card">GitLab</div>
-                </div>
+                <div class="experience-list">
+                    <article class="experience-item reveal">
+                        <div class="experience-meta">
+                            <p class="experience-role">Software Developer Co-op</p>
+                            <p class="experience-company">Irving Oil</p>
+                            <p class="experience-date">May 2026 - August 2026</p>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Migrating Salesforce sites from Aura to Lightning Web Runtime to support cleaner custom URL paths, stronger performance, improved scalability, and better SEO.</li>
+                            <li>Creating test coverage for custom Lightning Web Components that previously had little or no automated testing.</li>
+                            <li>Modernizing Salesforce site architecture while improving long-term maintainability for future development work.</li>
+                        </ul>
+                    </article>
 
-                <div class="tool-category">
-                    <h3>Testing Tools</h3>
-                    <div class="tool-card">JUnit</div>
-                    <div class="tool-card">UI Testing</div>
-                    <div class="tool-card">Playwright</div>
-                </div>
-
-                <div class="tool-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="tool-card">React</div>
+                    <article class="experience-item reveal">
+                        <div class="experience-meta">
+                            <p class="experience-role">Software Developer Co-op</p>
+                            <p class="experience-company">Irving Oil</p>
+                            <p class="experience-date">September 2025 - December 2025</p>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Developed Apex and Salesforce Flow automation to validate dealer rewards against a loyalty dataset of 2M+ records, reducing manual employee validation to zero.</li>
+                            <li>Rebuilt legacy Genesys routing logic in Salesforce with Amazon Connect, recreating routing workflows end-to-end on a single Salesforce-based platform.</li>
+                            <li>Designed a callback analysis flow to measure customer callback completion time and help teams identify bottlenecks affecting SLA performance.</li>
+                            <li>Created Amazon Connect telephony flows integrated with AWS Lambda to improve call-forwarding logic and streamline automated routing.</li>
+                            <li>Built and deployed an Einstein Bot for customer feedback, using Apex to automate case creation and designing the conversational submission flow in Salesforce.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Find me at:</h2>
-            <p class="connect-text">Let's connect!</p>
-            <div class="social-links">
-                <a href="https://github.com/jinawalbourne" class="social-icon">
-                    <img src="images/github-icon.png" alt="GitHub icon" class="icon-img">
-                </a>
-                <a href="https://www.linkedin.com/in/jina-walbourne" class="social-icon">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn icon" class="icon-img">
-                </a>
+        <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading section-heading-row reveal">
+                    <div>
+                        <p class="section-kicker">Selected Projects</p>
+                        <h2 id="projects-title">Software projects with clear technical intent.</h2>
+                    </div>
+                    <a href="https://github.com/jinawalbourne" class="text-link" target="_blank" rel="noopener noreferrer">View all work</a>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <img src="images/AI-Coach.jpg" alt="AI Sales Coach project preview" class="project-img" loading="lazy" decoding="async">
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p class="project-date">2025</p>
+                                <p class="project-type">AI practice tool</p>
+                            </div>
+                            <h3>AI Sales Coach</h3>
+                            <p class="project-caption">
+                                Inspired to practice sales training, I built this tool to simulate real-time objection handling using GPT-powered models.
+                            </p>
+                            <div class="project-tags" aria-label="Technologies used">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jinawalbourne/ai-sales-coach" class="button project-btn" target="_blank" rel="noopener noreferrer">
+                                    View source <span aria-hidden="true">-&gt;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/JSON.jpg" alt="JSON compiler project preview" class="project-img" loading="lazy" decoding="async">
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p class="project-date">2024</p>
+                                <p class="project-type">Compiler fundamentals</p>
+                            </div>
+                            <h3>Basic Front-end Compiler for JSON</h3>
+                            <p class="project-caption">
+                                Implemented a recursive descent parser to perform lexical, syntactic, and semantic analysis on JSON structures.
+                            </p>
+                            <div class="project-tags" aria-label="Technologies used">
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jinawalbourne/json-compiler" class="button project-btn" target="_blank" rel="noopener noreferrer">
+                                    View source <span aria-hidden="true">-&gt;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/course-scheduler.jpg" alt="Course Scheduler project preview" class="project-img" loading="lazy" decoding="async">
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p class="project-date">2024</p>
+                                <p class="project-type">Algorithms</p>
+                            </div>
+                            <h3>Course Scheduler</h3>
+                            <p class="project-caption">
+                                Developed a course scheduler that manages university courses and prerequisites, detecting cyclic dependencies using Depth First Search (DFS).
+                            </p>
+                            <div class="project-tags" aria-label="Technologies used">
+                                <span>Java</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jinawalbourne/course-scheduler" class="button project-btn" target="_blank" rel="noopener noreferrer">
+                                    View source <span aria-hidden="true">-&gt;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <p><img src="images/email-icon.png" alt="Email Icon" class="icon-img icon-email">jinawalbourne@dal.ca</p>
-        </div>
-    </section>
+        </section>
 
-    <button id="theme-toggle" type="button" aria-label="Toggle color theme">
-        <img src="images/lightmode-icon.png" alt="LightMode icon" class="icon-img">
+        <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-kicker">Skills</p>
+                    <h2 id="skills-title">Tools I use to build, test, and ship.</h2>
+                </div>
+
+                <div class="skills-layout">
+                    <div class="skill-group reveal">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-card">Java</div>
+                            <div class="skill-card">HTML</div>
+                            <div class="skill-card">CSS</div>
+                            <div class="skill-card">JavaScript</div>
+                            <div class="skill-card">Python</div>
+                            <div class="skill-card">x86 Assembly</div>
+                            <div class="skill-card">MySQL</div>
+                            <div class="skill-card">TypeScript</div>
+                        </div>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-category reveal">
+                            <h3>IDEs</h3>
+                            <div class="tool-card">Visual Studio Code</div>
+                            <div class="tool-card">IntelliJ IDEA</div>
+                            <div class="tool-card">Eclipse</div>
+                        </div>
+
+                        <div class="tool-category reveal">
+                            <h3>Version Control</h3>
+                            <div class="tool-card">Git</div>
+                            <div class="tool-card">GitHub</div>
+                            <div class="tool-card">GitLab</div>
+                        </div>
+
+                        <div class="tool-category reveal">
+                            <h3>Testing Tools</h3>
+                            <div class="tool-card">JUnit</div>
+                            <div class="tool-card">UI Testing</div>
+                            <div class="tool-card">Playwright</div>
+                        </div>
+
+                        <div class="tool-category reveal">
+                            <h3>Frameworks & Libraries</h3>
+                            <div class="tool-card">React</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <div class="container contact-panel reveal">
+                <div>
+                    <p class="section-kicker">Contact</p>
+                    <h2 id="contact-title">Let's connect.</h2>
+                    <p class="connect-text">I am open to software development opportunities, collaborative projects, and technical conversations.</p>
+                </div>
+
+                <div class="contact-actions" aria-label="Contact links">
+                    <a href="mailto:jinawalbourne@dal.ca" class="button button-primary">Email me</a>
+                    <a href="https://github.com/jinawalbourne" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <img src="images/github-icon.png" alt="" class="icon-img" loading="lazy" decoding="async">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jina-walbourne" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <img src="images/linkedin-icon.png" alt="" class="icon-img" loading="lazy" decoding="async">
+                    </a>
+                </div>
+
+                <p class="email-line">
+                    <img src="images/email-icon.png" alt="" class="icon-img icon-email" loading="lazy" decoding="async">
+                    <a href="mailto:jinawalbourne@dal.ca">jinawalbourne@dal.ca</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <button id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <img src="images/lightmode-icon.png" alt="" class="icon-img" aria-hidden="true">
     </button>
 
     <script src="script.js"></script>
