@@ -438,6 +438,7 @@ p {
 .about-copy {
     border-left: 3px solid var(--secondary-color);
     padding-left: 24px;
+    padding-bottom: 24px;
 }
 
 .about-copy h3 {
@@ -450,14 +451,41 @@ p {
     line-height: 1.85;
 }
 
-.soft-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 28px;
+.values-section {
+    margin-top: 58px;
+    width: 100%;
 }
 
-.soft-skills span,
+.values-section h3 {
+    margin-bottom: 16px;
+}
+
+.values-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.value-card {
+    background: var(--surface-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 18px;
+}
+
+.value-card h4 {
+    color: var(--secondary-strong);
+    font-size: 0.95rem;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.value-card p {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
 .project-tags span,
 .skill-card,
 .tool-card {
@@ -470,7 +498,6 @@ p {
     line-height: 1.25;
 }
 
-.soft-skills span,
 .project-tags span {
     align-items: center;
     display: inline-flex;
@@ -1023,6 +1050,9 @@ p {
     #theme-toggle {
         bottom: 16px;
         right: 16px;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
     }
 }
 
