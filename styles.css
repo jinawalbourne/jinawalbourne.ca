@@ -175,7 +175,7 @@ nav a.active {
 
 .section-kicker {
     color: var(--secondary-color);
-    font-size: 0.78rem;
+    font-size: 1.25rem;
     font-weight: 900;
     line-height: 1.35;
     margin-bottom: 14px;
@@ -325,7 +325,7 @@ p {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     box-shadow: var(--shadow-soft);
-    max-width: 390px;
+    max-width: 360px;
     padding: 14px;
     position: relative;
     width: 100%;
@@ -358,17 +358,19 @@ p {
     box-shadow: 0 16px 38px var(--shadow-color);
     color: var(--text-color);
     display: grid;
-    gap: 4px;
+    gap: 3px;
     left: -10px;
-    max-width: 260px;
-    padding: 16px;
+    max-width: 220px;
+    padding: 12px 14px;
     position: absolute;
     text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.45;
 }
 
 .note-label {
     color: var(--accent-color);
-    font-size: 0.76rem;
+    font-size: 0.68rem;
     font-weight: 900;
     text-transform: uppercase;
 }
